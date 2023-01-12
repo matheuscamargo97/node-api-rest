@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
     res.json({message: `SERVER RUNNING ON PORT ${port}...`});
 }) //passa os parametros pela url
 
-app.use("/carnes", carnesRouter);
+app.use('/carnes', carnesRouter);
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500;
